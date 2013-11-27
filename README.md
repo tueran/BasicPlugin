@@ -13,7 +13,7 @@ phonegap create com.siteforum.TestApp && cd $_
 - Add the plugin to it
 
 ```bash
-phonegap local plugin add 
+phonegap local plugin add https://github.com/tueran/BasicPlugin.git
 ```
 
 - Open `index.html and add a button
