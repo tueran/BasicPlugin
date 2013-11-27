@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
+    id="com.siteforum.basic.plugin"
+    version="0.0.1">
+    <name>BasicPlugin</name>   
+    <!-- ios -->
+    <platform name="ios">    
+        <config-file target="config.xml" parent="/*">
+            <feature name="BasicPlugin">
+                <param name="ios-package" value="BasicPlugin" /> 
+            </feature>
+        </config-file>
+        <js-module src="www/BasicPlugin.js" name="BasicPlugin">
+            <clobbers target="basicPlugin" />
+        </js-module>
+        <header-file src="src/ios/BasicPlugin.h" />
+	    <source-file src="src/ios/BasicPlugin.m" />
+    </platform>
+</plugin>
